@@ -1,16 +1,13 @@
 //
 // Created by JeffersonMT on 13/05/2024.
 //
+
 /*
-
-
-
 #include "ui.h"
 #include "logica.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 
 void mostrarMenu() {
     printf("\n---------------- Programa de Subcadenas ----------------\n");
@@ -36,28 +33,41 @@ void manejarOpcion(int opcion) {
             fgets(cadena, sizeof(cadena), stdin);
             cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el salto de línea al final
 
-            limpiarBuffer(); // Limpiar el buffer antes de leer la posición inicial
-            printf("Ingrese la posicion inicial: ");
-            if (scanf("%d", &inicio) != 1) {
-                printf("Error: La posicion inicial debe ser un numero entero.\n");
-                limpiarBuffer(); // Limpiar el buffer si no se ingresó un número
-                return; // Salir de la función
-            }
+            int longitud = strlen(cadena);
+            printf("La cadena tiene %d caracteres.\n", longitud);
 
-            limpiarBuffer(); // Limpiar el buffer antes de leer la posición final
-            printf("Ingrese la posicion final: ");
-            if (scanf("%d", &fin) != 1) {
-                printf("Error: La posicion final debe ser un numero entero.\n");
-                limpiarBuffer(); // Limpiar el buffer si no se ingresó un número
-                return; // Salir de la función
-            }
+            do {
+                printf("Ingrese el inicio del rango (entre 0 y %d): ", longitud - 1);
+                if (scanf("%d", &inicio) != 1) {
+                    printf("Error: Ingrese un numero valido.\n");
+                    limpiarBuffer();
+                } else if (inicio < 0 || inicio >= longitud) {
+                    printf("Error: Ingrese un inicio dentro del rango valido.\n");
+                    limpiarBuffer();
+                } else {
+                    break;
+                }
+            } while (1);
+
+            do {
+                printf("Ingrese el fin del rango (entre %d y %d): ", inicio + 1, longitud);
+                if (scanf("%d", &fin) != 1) {
+                    printf("Error: Ingrese un numero valido.\n");
+                    limpiarBuffer();
+                } else if (fin <= inicio || fin > longitud) {
+                    printf("Error: Ingrese un fin dentro del rango valido.\n");
+                    limpiarBuffer();
+                } else {
+                    break;
+                }
+            } while (1);
 
             subcadena = obtenerSubcadena(cadena, inicio, fin);
             if (subcadena != NULL) {
                 printf("La subcadena es: %s\n", subcadena);
                 free(subcadena); // Liberar la memoria asignada a la subcadena
             } else {
-                printf("Error: La posicion inicial o final es invalida.\n");
+                printf("Error: El rango especificado es invalido.\n");
             }
 
             break;
@@ -69,7 +79,10 @@ void manejarOpcion(int opcion) {
             printf("Opcion invalida.\n");
     }
 }
+
 */
+
+
 
 #include "ui.h"
 #include "logica.h"
@@ -103,28 +116,41 @@ void manejarOpcion(int opcion) {
             fgets(cadena, sizeof(cadena), stdin);
             cadena[strcspn(cadena, "\n")] = '\0';
 
-            limpiarBuffer();
-            printf("Ingrese la posicion inicial: ");
-            if (scanf("%d", &inicio) != 1) {
-                printf("Error: La posicion inicial debe ser un numero entero.\n");
-                limpiarBuffer();
-                return;
-            }
+            int longitud = strlen(cadena);
+            printf("La cadena tiene %d caracteres.\n", longitud);
 
-            limpiarBuffer();
-            printf("Ingrese la posicion final: ");
-            if (scanf("%d", &fin) != 1) {
-                printf("Error: La posicion final debe ser un numero entero.\n");
-                limpiarBuffer();
-                return;
-            }
+            do {
+                printf("Ingrese el inicio del rango (entre 0 y %d): ", longitud - 1);
+                if (scanf("%d", &inicio) != 1) {
+                    printf("Error: Ingrese un numero valido.\n");
+                    limpiarBuffer();
+                } else if (inicio < 0 || inicio >= longitud) {
+                    printf("Error: Ingrese un inicio dentro del rango valido.\n");
+                    limpiarBuffer();
+                } else {
+                    break;
+                }
+            } while (1);
+
+            do {
+                printf("Ingrese el fin del rango (entre %d y %d): ", inicio + 1, longitud);
+                if (scanf("%d", &fin) != 1) {
+                    printf("Error: Ingrese un numero valido.\n");
+                    limpiarBuffer();
+                } else if (fin <= inicio || fin > longitud) {
+                    printf("Error: Ingrese un fin dentro del rango valido.\n");
+                    limpiarBuffer();
+                } else {
+                    break;
+                }
+            } while (1);
 
             subcadena = obtenerSubcadena(cadena, inicio, fin);
             if (subcadena != NULL) {
                 printf("La subcadena es: %s\n", subcadena);
                 free(subcadena);
             } else {
-                printf("Error: La posicion inicial o final es invalida.\n");
+                printf("Error: El rango especificado es invalido.\n");
             }
 
             break;
@@ -180,4 +206,7 @@ void manejarOpcion(int opcion) {
             printf("Opcion invalida.\n");
     }
 }
+
+
+
 

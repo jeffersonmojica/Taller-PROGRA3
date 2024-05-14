@@ -6,7 +6,7 @@
 #define TALLER_PROGRA3_LOGICA_H
 
 
-char* obtenerSubcadena(const char* cadena, int inicio, int fin); //SUBCADENAS
+char* obtenerSubcadena(const char* cadena, int inicio, int fin);
 
 char* obtenerDiferencia(const char* cadena1, const char* cadena2);
 

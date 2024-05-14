@@ -10,7 +10,7 @@
 
 char* obtenerSubcadena(const char* cadena, int inicio, int fin) {
     if (cadena == NULL || inicio < 0 || fin < 0 || inicio > strlen(cadena) || fin > strlen(cadena)) {
-        return NULL; // Validamos los parámetros de entrada
+        return NULL;
     }
 
     char* subcadena;
@@ -33,16 +33,19 @@ char* obtenerSubcadena(const char* cadena, int inicio, int fin) {
         strncpy(subcadena, cadena + inicio, longitud);
     }
 
-    subcadena[longitud] = '\0'; // Agregamos el terminador de cadena
+    subcadena[longitud] = '\0';
     return subcadena;
 }
 
+
+
+
+
 char* obtenerDiferencia(const char* cadena1, const char* cadena2) {
     if (cadena1 == NULL || cadena2 == NULL) {
-        return NULL; // Validación de entradas nulas
+        return NULL;
     }
 
-    // Verificar si las cadenas contienen caracteres repetidos
     int caracteres[256] = {0};
     for (int i = 0; i < strlen(cadena2); i++) {
         caracteres[(int)cadena2[i]]++;
@@ -50,7 +53,7 @@ char* obtenerDiferencia(const char* cadena1, const char* cadena2) {
 
     for (int i = 0; i < strlen(cadena1); i++) {
         if (caracteres[(int)cadena1[i]] > 0) {
-            return NULL; // Caracteres repetidos, no se puede calcular la diferencia
+            return NULL;
         }
     }
 

@@ -3,18 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-/*
-int main() {
-    int opcion;
-
-    do {
-        mostrarMenu();
-        scanf("%d", &opcion);
-        manejarOpcion(opcion);
-    } while (opcion != 0);
-
-    return 0;
-}*/
 
 int main() {
     char opcionStr[10];
@@ -23,9 +11,9 @@ int main() {
     do {
         mostrarMenu();
         fgets(opcionStr, sizeof(opcionStr), stdin);
-        opcionStr[strcspn(opcionStr, "\n")] = '\0'; // Eliminar el salto de línea al final
+        opcionStr[strcspn(opcionStr, "\n")] = '\0';
 
-        if (isdigit(opcionStr[0])) { // Verificar si la primera letra es un dígito
+        if (isdigit(opcionStr[0])) {
             opcion = atoi(opcionStr);
             manejarOpcion(opcion);
         } else {

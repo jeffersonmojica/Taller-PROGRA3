@@ -28,7 +28,7 @@ int main() {
         }
         while ((c = getchar()) != '\n' && c != EOF); // Limpiar el buffer de entrada
 
-        if (opcion < 1 || opcion > 3) {
+        if (opcion < 1 || opcion > 9) {
             printf("Error: Opción fuera de rango.\n");
             continue;
         }

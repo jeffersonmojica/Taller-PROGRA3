@@ -1,6 +1,7 @@
 #include "function.h"
 
 #include <ctype.h>
+#include <stdio.h>
 #include <string.h>
 
 
@@ -56,4 +57,22 @@ void fillString(char *string, const char character, const int direction, const i
     }
 
     string[len + numCharacters] = '\0';
+}
+
+void read_string(const char *msg, char *string, const size_t input_len) {
+    char buffer[input_len];
+    do {
+        printf("%s", msg);
+        fgets(buffer, input_len, stdin);
+        if (buffer[0] == '\n') {
+            printf("Error: La cadena esta vacia.\n\n");
+        }
+    } while (buffer[0] == '\n');
+
+    const size_t buffer_len = strlen(buffer);
+    if (buffer[buffer_len - 1] == '\n') {
+        buffer[buffer_len - 1] = '\0';
+    }
+
+    strcpy(string, buffer);
 }

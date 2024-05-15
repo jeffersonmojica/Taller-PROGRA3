@@ -7,6 +7,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include "function.h"
+
 int main() {
     char cadena[101]; // Tamaño para la cadena base
     char subcadena[50]; // Tamaño para la subcadena
@@ -24,10 +26,13 @@ int main() {
         printf("\nMenu de opciones:\n");
 
         printf("1. Buscar todas las ocurrencias de una subcadena\n");
+        printf("2. Funcion que rellena de caracteres a la izquierda o derecha de una cadena\n");
         printf("3. Funcion que retorna una subcadena\n");
         printf("4. Funcion que reemplaza todas las ocurrencias de un caracter por otro\n");
         printf("5. Validar si una cadena inicia con otra\n");
+        printf("6. Funcion que retorna cadena sin caracteres repetidos\n");
         printf("7. Funcion que realiza una operacion de diferencia entre dos cadenas\n");
+        printf("9. Funcion que ordena una cadena\n");
         printf("0. Salir\n");
         printf("Seleccione una opcion: ");
 
@@ -42,7 +47,7 @@ int main() {
             printf("Error: Opcion fuera de rango.\n");
             continue;
         }
-
+        fflush(stdin);
         switch (opcion) {
             case 1:
                 printf("Ingrese la cadena base: ");
@@ -57,6 +62,59 @@ int main() {
                 printf("Numero total de ocurrencias encontradas: %d\n", searchSubstring(cadena, subcadena, posicionInicio));
                 break;
 
+            case 2: {
+                const size_t input_size=100;
+                char str[input_size];
+                char input[10];
+                char character;
+                int aux;
+                int ret,ret2;
+                int flag;
+                char *ptr;
+
+                read_string("Ingrese la cadena a la cual agregar caracteres: ", str, input_size);
+                do {
+                    aux = 0;
+                    printf("Ingresa un caracter: ");
+                    character = getchar();
+
+                    if(getchar() != '\n') {
+                        printf("Error: se ingreso mas de un caracter.\n");
+                        aux = 1;
+
+                        while (getchar() != '\n');
+                    }
+                } while(aux);
+                do {
+                    aux=0;
+                    printf("Ingrese (0) si quiere agregar caracteres a la izquierda o (1) para agregar a la derecha");
+                    fgets(input, sizeof(input), stdin);
+
+                    ret = strtol(input, &ptr, 10);
+
+                    if (ptr == input) {
+                        printf("El valor ingresado no es un numero.\n");
+                        flag = 1;
+                    } else if (ret != 1 && ret != 0) {
+                        printf("El valor ingresado es un numero, pero no es ni 1 ni 0.\n");
+                        flag = 1;
+                    }
+                }while(flag);
+                do {
+                    aux=0;
+                    printf("Ingrese el numero de caracteres a rellenar");
+                    fgets(input, sizeof(input), stdin);
+
+                    ret2 = strtol(input, &ptr, 10);
+                    if (ptr == input) {
+                        printf("El valor ingresado no es un numero.\n");
+                        flag = 1;
+                    }
+                }while(flag);
+                fillString(str,character,ret, ret2);
+                printf("La cadena mas los caracteres es: %s\n", str);
+                break;
+            }
             case 3:
                 printf("Ingrese la cadena: ");
                 fgets(string, sizeof(string), stdin);
@@ -119,6 +177,16 @@ int main() {
                 printf("%d\n", inicio);
                 break;
 
+            case 6:{
+                const size_t input_size = 100;
+                char str[input_size];
+                read_string("Ingrese la cadena para remover duplicados: ", str, input_size);
+                removeDuplicates(str);
+                printf("Cadena sin duplicados: %s\n", str);
+                break;
+            }
+
+
             case 7:
                 clearBuffer();
                 printf("Ingrese la primera cadena: ");
@@ -157,6 +225,15 @@ int main() {
                 }
 
                 break;
+
+            case 9:{
+                const size_t input_size = 100;
+                char str[input_size];
+                read_string("Ingrese la cadena para ordenarla: ", str, input_size);
+                orderStr(str);
+                printf("La cadena ordenada es: %s\n", str);
+                break;
+            }
 
             case 0:
                 printf("Saliendo del programa...\n");

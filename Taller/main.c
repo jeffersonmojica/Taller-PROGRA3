@@ -1,11 +1,9 @@
 #include <stdio.h>
-
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
-void mostrarMenu() {
+void showMenu() {
     printf("\n---------------- Programa de Subcadenas ----------------\n");
     printf("1. Obtener subcadena\n");
     printf("2. Obtener diferencia entre cadenas\n");
@@ -13,83 +11,83 @@ void mostrarMenu() {
     printf("Ingrese su opcion: ");
 }
 
-void limpiarBuffer() {
+void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
-void manejarOpcion(int opcion);
+void handleOption(int option);
 
-char* obtenerSubcadena(const char* cadena, int inicio, int fin) {
-    if (cadena == NULL || inicio < 0 || fin < 0 || inicio > strlen(cadena) || fin > strlen(cadena)) {
+char* getSubstring(const char* string, int start, int end) {
+    if (string == NULL || start < 0 || end < 0 || start > strlen(string) || end > strlen(string)) {
         return NULL;
     }
 
-    char* subcadena;
-    int longitud;
+    char* substring;
+    int length;
 
-    if (fin == 0) {
-        longitud = strlen(cadena) - inicio;
-        subcadena = (char*)malloc((longitud + 1) * sizeof(char));
-        strncpy(subcadena, cadena + inicio, longitud);
-    } else if (inicio > fin) {
-        longitud = inicio - fin + 1;
-        subcadena = (char*)malloc((longitud + 1) * sizeof(char));
-        for (int i = inicio, j = 0; i >= fin; i--, j++) {
-            subcadena[j] = cadena[i];
+    if (end == 0) {
+        length = strlen(string) - start;
+        substring = (char*)malloc((length + 1) * sizeof(char));
+        strncpy(substring, string + start, length);
+    } else if (start > end) {
+        length = start - end + 1;
+        substring = (char*)malloc((length + 1) * sizeof(char));
+        for (int i = start, j = 0; i >= end; i--, j++) {
+            substring[j] = string[i];
         }
-        subcadena[longitud] = '\0';
+        substring[length] = '\0';
     } else {
-        longitud = fin - inicio + 1;
-        subcadena = (char*)malloc((longitud + 1) * sizeof(char));
-        strncpy(subcadena, cadena + inicio, longitud);
+        length = end - start + 1;
+        substring = (char*)malloc((length + 1) * sizeof(char));
+        strncpy(substring, string + start, length);
     }
 
-    subcadena[longitud] = '\0';
-    return subcadena;
+    substring[length] = '\0';
+    return substring;
 }
 
-char* obtenerDiferencia(const char* cadena1, const char* cadena2) {
-    if (cadena1 == NULL || cadena2 == NULL) {
+char* getDifference(const char* string1, const char* string2) {
+    if (string1 == NULL || string2 == NULL) {
         return NULL;
     }
 
-    int caracteres[256] = {0};
-    for (int i = 0; i < strlen(cadena2); i++) {
-        caracteres[(int)cadena2[i]]++;
+    int characters[256] = {0};
+    for (int i = 0; i < strlen(string2); i++) {
+        characters[(int)string2[i]]++;
     }
 
-    for (int i = 0; i < strlen(cadena1); i++) {
-        if (caracteres[(int)cadena1[i]] > 0) {
+    for (int i = 0; i < strlen(string1); i++) {
+        if (characters[(int)string1[i]] > 0) {
             return NULL;
         }
     }
 
-    // Calcular la diferencia entre las cadenas
-    char* diferencia = (char*)malloc((strlen(cadena1) + 1) * sizeof(char));
+    // Calculate the difference between strings
+    char* difference = (char*)malloc((strlen(string1) + 1) * sizeof(char));
     int j = 0;
-    for (int i = 0; i < strlen(cadena1); i++) {
-        if (!strchr(cadena2, cadena1[i])) {
-            diferencia[j++] = cadena1[i];
+    for (int i = 0; i < strlen(string1); i++) {
+        if (!strchr(string2, string1[i])) {
+            difference[j++] = string1[i];
         }
     }
-    diferencia[j] = '\0';
+    difference[j] = '\0';
 
-    return diferencia;
+    return difference;
 }
 
 int main() {
-    char opcionStr[10];
-    int opcion;
+    char optionStr[10];
+    int option;
 
     do {
-        mostrarMenu();
-        fgets(opcionStr, sizeof(opcionStr), stdin);
-        opcionStr[strcspn(opcionStr, "\n")] = '\0';
+        showMenu();
+        fgets(optionStr, sizeof(optionStr), stdin);
+        optionStr[strcspn(optionStr, "\n")] = '\0';
 
-        if (isdigit(opcionStr[0])) {
-            opcion = atoi(opcionStr);
-            manejarOpcion(opcion);
+        if (isdigit(optionStr[0])) {
+            option = atoi(optionStr);
+            handleOption(option);
         } else {
             printf("Error: Ingrese una opcion numerica valida.\n");
         }
@@ -98,32 +96,32 @@ int main() {
     return 0;
 }
 
-void manejarOpcion(int opcion) {
-    switch (opcion) {
+void handleOption(int option) {
+    switch (option) {
         case 1: {
-            char cadena[100];
-            int inicio, fin;
-            char* subcadena;
+            char string[100];
+            int start, end;
+            char* substring;
 
-            limpiarBuffer();
+            clearBuffer();
             printf("Ingrese la cadena: ");
-            fgets(cadena, sizeof(cadena), stdin);
-            cadena[strcspn(cadena, "\n")] = '\0';
+            fgets(string, sizeof(string), stdin);
+            string[strcspn(string, "\n")] = '\0';
 
-            if (cadena[0] == '\0') {
+            if (string[0] == '\0') {
                 printf("Error: La cadena no puede estar vacia.\n");
                 break;
             }
 
-            int longitud = strlen(cadena);
-            printf("La cadena tiene %d caracteres.\n", longitud);
+            int length = strlen(string);
+            printf("La cadena tiene %d caracteres.\n", length);
 
             do {
-                printf("Ingrese el inicio del rango (entre 0 y %d): ", longitud - 1);
-                char inicioStr[10];
-                fgets(inicioStr, sizeof(inicioStr), stdin);
-                inicio = atoi(inicioStr);
-                if (inicio < 0 || inicio >= longitud) {
+                printf("Ingrese el inicio del rango (entre 0 y %d): ", length - 1);
+                char startStr[10];
+                fgets(startStr, sizeof(startStr), stdin);
+                start = atoi(startStr);
+                if (start < 0 || start >= length) {
                     printf("Error: Ingrese un inicio dentro del rango valido.\n");
                 } else {
                     break;
@@ -131,21 +129,21 @@ void manejarOpcion(int opcion) {
             } while (1);
 
             do {
-                printf("Ingrese el fin del rango (entre %d y %d): ", inicio + 1, longitud);
-                char finStr[10];
-                fgets(finStr, sizeof(finStr), stdin);
-                fin = atoi(finStr);
-                if (fin <= inicio || fin > longitud) {
+                printf("Ingrese el fin del rango (entre %d y %d): ", start + 1, length);
+                char endStr[10];
+                fgets(endStr, sizeof(endStr), stdin);
+                end = atoi(endStr);
+                if (end <= start || end > length) {
                     printf("Error: Ingrese un fin dentro del rango valido.\n");
                 } else {
                     break;
                 }
             } while (1);
 
-            subcadena = obtenerSubcadena(cadena, inicio, fin);
-            if (subcadena != NULL) {
-                printf("La subcadena es: %s\n", subcadena);
-                free(subcadena);
+            substring = getSubstring(string, start, end);
+            if (substring != NULL) {
+                printf("La subcadena es: %s\n", substring);
+                free(substring);
             } else {
                 printf("Error: El rango especificado es invalido.\n");
             }
@@ -154,40 +152,40 @@ void manejarOpcion(int opcion) {
         }
 
         case 2: {
-            char cadena1[100];
-            char cadena2[100];
-            char* diferencia;
+            char string1[100];
+            char string2[100];
+            char* difference;
 
-            limpiarBuffer();
+            clearBuffer();
             printf("Ingrese la primera cadena: ");
-            fgets(cadena1, sizeof(cadena1), stdin);
-            cadena1[strcspn(cadena1, "\n")] = '\0';
+            fgets(string1, sizeof(string1), stdin);
+            string1[strcspn(string1, "\n")] = '\0';
 
-            if (cadena1[0] == '\0') {
+            if (string1[0] == '\0') {
                 printf("Error: La primera cadena no puede estar vacia.\n");
                 break;
             }
 
-            limpiarBuffer();
+            clearBuffer();
             printf("Ingrese la segunda cadena: ");
-            fgets(cadena2, sizeof(cadena2), stdin);
-            cadena2[strcspn(cadena2, "\n")] = '\0';
+            fgets(string2, sizeof(string2), stdin);
+            string2[strcspn(string2, "\n")] = '\0';
 
-            if (cadena2[0] == '\0') {
+            if (string2[0] == '\0') {
                 printf("Error: La segunda cadena no puede estar vacia.\n");
                 break;
             }
 
-            diferencia = obtenerDiferencia(cadena1, cadena2);
-            if (diferencia != NULL) {
-                printf("La diferencia entre las cadenas es: %s\n", diferencia);
-                free(diferencia);
+            difference = getDifference(string1, string2);
+            if (difference != NULL) {
+                printf("La diferencia entre las cadenas es: %s\n", difference);
+                free(difference);
             } else {
                 printf("No se puede calcular la diferencia debido a caracteres repetidos en las cadenas: ");
-                for (int i = 0; i < strlen(cadena1); i++) {
-                    for (int j = 0; j < strlen(cadena2); j++) {
-                        if (cadena1[i] == cadena2[j]) {
-                            printf("%c ", cadena1[i]);
+                for (int i = 0; i < strlen(string1); i++) {
+                    for (int j = 0; j < strlen(string2); j++) {
+                        if (string1[i] == string2[j]) {
+                            printf("%c ", string1[i]);
                         }
                     }
                 }

@@ -164,7 +164,7 @@ void manejarOpcion(int opcion) {
             limpiarBuffer();
             printf("Ingrese la primera cadena: ");
             fgets(cadena1, sizeof(cadena1), stdin);
-            cadena1[strcspn(cadena1, "\n")] = '\0'; l
+            cadena1[strcspn(cadena1, "\n")] = '\0';
 
             if (cadena1[0] == '\0') {
                 printf("Error: La primera cadena no puede estar vacia.\n");

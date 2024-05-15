@@ -17,4 +17,6 @@ add_executable(Taller_PROGRA3 main.c
         function.h
         ChangeString.c
         ChangeString.h
+        Programa.c
+        Programa.h
 )

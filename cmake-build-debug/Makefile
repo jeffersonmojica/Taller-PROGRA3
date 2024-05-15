@@ -152,6 +152,30 @@ Punto1_5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.s
 .PHONY : Punto1_5.c.s
 
+function.obj: function.c.obj
+.PHONY : function.obj
+
+# target to build an object file
+function.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/function.c.obj
+.PHONY : function.c.obj
+
+function.i: function.c.i
+.PHONY : function.i
+
+# target to preprocess a source file
+function.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/function.c.i
+.PHONY : function.c.i
+
+function.s: function.c.s
+.PHONY : function.s
+
+# target to generate assembly for a file
+function.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/function.c.s
+.PHONY : function.c.s
+
 logica.obj: logica.c.obj
 .PHONY : logica.obj
 
@@ -236,6 +260,9 @@ help:
 	@echo ... Punto1_5.obj
 	@echo ... Punto1_5.i
 	@echo ... Punto1_5.s
+	@echo ... function.obj
+	@echo ... function.i
+	@echo ... function.s
 	@echo ... logica.obj
 	@echo ... logica.i
 	@echo ... logica.s

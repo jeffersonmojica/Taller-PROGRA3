@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj"
   "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj.d"
+  "CMakeFiles/Taller_PROGRA3.dir/function.c.obj"
+  "CMakeFiles/Taller_PROGRA3.dir/function.c.obj.d"
   "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj"
   "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj.d"
   "CMakeFiles/Taller_PROGRA3.dir/main.c.obj"

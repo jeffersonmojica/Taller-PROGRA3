@@ -82,6 +82,12 @@
 		<Unit filename="C:/Users/alejo/CLionProjects/Taller-PROGRA3/Punto1_5.h">
 			<Option target="Taller_PROGRA3"/>
 		</Unit>
+		<Unit filename="C:/Users/alejo/CLionProjects/Taller-PROGRA3/function.c">
+			<Option target="Taller_PROGRA3"/>
+		</Unit>
+		<Unit filename="C:/Users/alejo/CLionProjects/Taller-PROGRA3/function.h">
+			<Option target="Taller_PROGRA3"/>
+		</Unit>
 		<Unit filename="C:/Users/alejo/CLionProjects/Taller-PROGRA3/logica.c">
 			<Option target="Taller_PROGRA3"/>
 		</Unit>

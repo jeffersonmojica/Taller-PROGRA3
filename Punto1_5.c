@@ -7,47 +7,47 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
-int buscarSubcadena(const char *cadena, const char *subcadena, int posicionInicio){
-    if (cadena == NULL || subcadena == NULL) {
+int searchSubstring(const char *chain, const char *subChain, int positionStart){
+    if (chain == NULL || subChain == NULL) {
         printf("Error: Se recibió una cadena nula.\n");
         return -1;
     }
 
-    int longitudCadena = strlen(cadena);
-    int longitudSubcadena = strlen(subcadena);
-    int contador = 0;
+    int chainlength = strlen(chain);
+    int substringLength = strlen(subChain);
+    int counter = 0;
 
-    if (longitudCadena < longitudSubcadena || posicionInicio < 0 || posicionInicio >= longitudCadena) {
+    if (chainlength < substringLength || positionStart < 0 || positionStart >= chainlength) {
         printf("Error: Parámetros de entrada inválidos.\n");
         return -1;
     }
 
-    const char *resultado = strstr(cadena + posicionInicio, subcadena); // Buscar la subcadena a partir de la posición especificada
-    while (resultado != NULL) {
-        contador++;
-        resultado = strstr(resultado + 1, subcadena); // Avanzar al siguiente carácter después de la ocurrencia encontrada
+    const char *result = strstr(chain + positionStart, subChain); // Buscar la subChain a partir de la posición especificada
+    while (result != NULL) {
+        counter++;
+        result = strstr(result + 1, subChain); // Avanzar al siguiente carácter después de la ocurrencia encontrada
     }
 
-    return contador;
+    return counter;
 }
 
-int cadenaIniciaCon(const char *cadenaBase, const char *subcadena){
-if (cadenaBase == NULL || subcadena == NULL) {
+int stringStartWith(const char *chainBase, const char *subChain){
+if (chainBase == NULL || subChain == NULL) {
 printf("Error: Se recibió una cadena nula.\n");
 return -1;
 }
 
-int longitudCadenaBase = strlen(cadenaBase);
-int longitudSubcadena = strlen(subcadena);
+int lengthChainBase = strlen(chainBase);
+int lengthSubString = strlen(subChain);
 
-if (longitudCadenaBase < longitudSubcadena) {
-printf("Error: La longitud de la cadena base es menor que la subcadena.\n");
+if (lengthChainBase < lengthSubString) {
+printf("Error: La longitud de la cadena base es menor que la sub cadena.\n");
 return -1;
 }
 
-if (strncmp(cadenaBase, subcadena, longitudSubcadena) == 0) {
-return 1; // La cadena base inicia con la subcadena
+if (strncmp(chainBase, subChain, lengthSubString) == 0) {
+return 1; // La chain base inicia con la subChain
 } else {
-return 0; // La cadena base no inicia con la subcadena
+return 0; // La chain base no inicia con la subChain
 }
 }

@@ -69,7 +69,6 @@ int main() {
                 char character;
                 int aux;
                 int ret,ret2;
-                int flag;
                 char *ptr;
 
                 read_string("Ingrese la cadena a la cual agregar caracteres: ", str, input_size);
@@ -94,12 +93,12 @@ int main() {
 
                     if (ptr == input) {
                         printf("El valor ingresado no es un numero.\n");
-                        flag = 1;
+                        aux = 1;
                     } else if (ret != 1 && ret != 0) {
                         printf("El valor ingresado es un numero, pero no es ni 1 ni 0.\n");
-                        flag = 1;
+                        aux = 1;
                     }
-                }while(flag);
+                }while(aux);
                 do {
                     aux=0;
                     printf("Ingrese el numero de caracteres a rellenar");
@@ -108,9 +107,9 @@ int main() {
                     ret2 = strtol(input, &ptr, 10);
                     if (ptr == input) {
                         printf("El valor ingresado no es un numero.\n");
-                        flag = 1;
+                        aux = 1;
                     }
-                }while(flag);
+                }while(aux);
                 fillString(str,character,ret, ret2);
                 printf("La cadena mas los caracteres es: %s\n", str);
                 break;

@@ -1,6 +1,6 @@
 CMakeFiles/Taller_PROGRA3.dir/main.c.obj: \
- C:\Users\angel\CLionProjects\Taller\main.c \
- C:\Users\angel\CLionProjects\Taller\ui.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\main.c \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\ui.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -25,5 +25,5 @@ CMakeFiles/Taller_PROGRA3.dir/main.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
- C:\Users\angel\CLionProjects\Taller\Punto1_5.h \
- C:\Users\angel\CLionProjects\Taller\ChangeString.h
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\Punto1_5.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\ChangeString.h

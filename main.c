@@ -33,12 +33,13 @@ int main() {
             continue;
         }
 
-        printf("Ingrese la cadena base: ");
-        fgets(cadena, sizeof(cadena), stdin);
-        cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el carácter de nueva línea
+
 
         switch (opcion) {
             case 1:
+                printf("Ingrese la cadena base: ");
+                fgets(cadena, sizeof(cadena), stdin);
+                cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el carácter de nueva línea
                 printf("Ingrese la subcadena a buscar: ");
                 scanf("%s", subcadena);
                 while ((c = getchar()) != '\n' && c != EOF); // Limpiar el buffer de entrada
@@ -52,6 +53,9 @@ int main() {
                 break;
 
             case 5:
+                printf("Ingrese la cadena base: ");
+                fgets(cadena, sizeof(cadena), stdin);
+                cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el carácter de nueva línea
                 printf("Ingrese la cadena a verificar si inicia con: ");
                 fgets(subcadena, sizeof(subcadena), stdin);
                 subcadena[strcspn(subcadena, "\n")] = '\0'; // Eliminar el carácter de nueva línea

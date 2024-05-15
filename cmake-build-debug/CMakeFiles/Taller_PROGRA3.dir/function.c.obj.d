@@ -1,6 +1,6 @@
 CMakeFiles/Taller_PROGRA3.dir/function.c.obj: \
- C:\Users\angel\CLionProjects\Taller\function.c \
- C:\Users\angel\CLionProjects\Taller\function.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\function.c \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\function.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

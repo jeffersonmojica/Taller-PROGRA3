@@ -1,6 +1,6 @@
 CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj: \
- C:\Users\angel\CLionProjects\Taller\Punto1_5.c \
- C:\Users\angel\CLionProjects\Taller\Punto1_5.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\Punto1_5.c \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\Punto1_5.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

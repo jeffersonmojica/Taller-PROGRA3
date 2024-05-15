@@ -1,7 +1,7 @@
 CMakeFiles/Taller_PROGRA3.dir/ui.c.obj: \
- C:\Users\angel\CLionProjects\Taller\ui.c \
- C:\Users\angel\CLionProjects\Taller\ui.h \
- C:\Users\angel\CLionProjects\Taller\logica.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\ui.c \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\ui.h \
+ C:\Users\alejo\CLionProjects\Taller-PROGRA33\logica.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

@@ -15,4 +15,6 @@ add_executable(Taller_PROGRA3 main.c
         Punto1_5.h
         function.c
         function.h
+        ChangeString.c
+        ChangeString.h
 )

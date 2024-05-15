@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\alejo\CLionProjects\Taller-PROGRA3
+CMAKE_SOURCE_DIR = C:\Users\angel\CLionProjects\Taller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\angel\CLionProjects\Taller\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles C:\Users\angel\CLionProjects\Taller\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,30 @@ Taller_PROGRA3: cmake_check_build_system
 Taller_PROGRA3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/build
 .PHONY : Taller_PROGRA3/fast
+
+ChangeString.obj: ChangeString.c.obj
+.PHONY : ChangeString.obj
+
+# target to build an object file
+ChangeString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj
+.PHONY : ChangeString.c.obj
+
+ChangeString.i: ChangeString.c.i
+.PHONY : ChangeString.i
+
+# target to preprocess a source file
+ChangeString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.i
+.PHONY : ChangeString.c.i
+
+ChangeString.s: ChangeString.c.s
+.PHONY : ChangeString.s
+
+# target to generate assembly for a file
+ChangeString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_PROGRA3.dir\build.make CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.s
+.PHONY : ChangeString.c.s
 
 Punto1_5.obj: Punto1_5.c.obj
 .PHONY : Punto1_5.obj
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller_PROGRA3
+	@echo ... ChangeString.obj
+	@echo ... ChangeString.i
+	@echo ... ChangeString.s
 	@echo ... Punto1_5.obj
 	@echo ... Punto1_5.i
 	@echo ... Punto1_5.s

@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\alejo\CLionProjects\Taller-PROGRA3
+CMAKE_SOURCE_DIR = C:\Users\angel\CLionProjects\Taller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\angel\CLionProjects\Taller\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Taller_PROGRA3.dir/depend.make
@@ -69,74 +69,88 @@ include CMakeFiles/Taller_PROGRA3.dir/progress.make
 include CMakeFiles/Taller_PROGRA3.dir/flags.make
 
 CMakeFiles/Taller_PROGRA3.dir/main.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
-CMakeFiles/Taller_PROGRA3.dir/main.c.obj: C:/Users/alejo/CLionProjects/Taller-PROGRA3/main.c
+CMakeFiles/Taller_PROGRA3.dir/main.c.obj: C:/Users/angel/CLionProjects/Taller/main.c
 CMakeFiles/Taller_PROGRA3.dir/main.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Taller_PROGRA3.dir/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/main.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\main.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\main.c.obj -c C:\Users\alejo\CLionProjects\Taller-PROGRA3\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Taller_PROGRA3.dir/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/main.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\main.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\main.c.obj -c C:\Users\angel\CLionProjects\Taller\main.c
 
 CMakeFiles/Taller_PROGRA3.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\alejo\CLionProjects\Taller-PROGRA3\main.c > CMakeFiles\Taller_PROGRA3.dir\main.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\main.c > CMakeFiles\Taller_PROGRA3.dir\main.c.i
 
 CMakeFiles/Taller_PROGRA3.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\alejo\CLionProjects\Taller-PROGRA3\main.c -o CMakeFiles\Taller_PROGRA3.dir\main.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\main.c -o CMakeFiles\Taller_PROGRA3.dir\main.c.s
 
 CMakeFiles/Taller_PROGRA3.dir/logica.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
-CMakeFiles/Taller_PROGRA3.dir/logica.c.obj: C:/Users/alejo/CLionProjects/Taller-PROGRA3/logica.c
+CMakeFiles/Taller_PROGRA3.dir/logica.c.obj: C:/Users/angel/CLionProjects/Taller/logica.c
 CMakeFiles/Taller_PROGRA3.dir/logica.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Taller_PROGRA3.dir/logica.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/logica.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\logica.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\logica.c.obj -c C:\Users\alejo\CLionProjects\Taller-PROGRA3\logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Taller_PROGRA3.dir/logica.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/logica.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\logica.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\logica.c.obj -c C:\Users\angel\CLionProjects\Taller\logica.c
 
 CMakeFiles/Taller_PROGRA3.dir/logica.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/logica.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\alejo\CLionProjects\Taller-PROGRA3\logica.c > CMakeFiles\Taller_PROGRA3.dir\logica.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\logica.c > CMakeFiles\Taller_PROGRA3.dir\logica.c.i
 
 CMakeFiles/Taller_PROGRA3.dir/logica.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/logica.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\alejo\CLionProjects\Taller-PROGRA3\logica.c -o CMakeFiles\Taller_PROGRA3.dir\logica.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\logica.c -o CMakeFiles\Taller_PROGRA3.dir\logica.c.s
 
 CMakeFiles/Taller_PROGRA3.dir/ui.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
-CMakeFiles/Taller_PROGRA3.dir/ui.c.obj: C:/Users/alejo/CLionProjects/Taller-PROGRA3/ui.c
+CMakeFiles/Taller_PROGRA3.dir/ui.c.obj: C:/Users/angel/CLionProjects/Taller/ui.c
 CMakeFiles/Taller_PROGRA3.dir/ui.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Taller_PROGRA3.dir/ui.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/ui.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\ui.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\ui.c.obj -c C:\Users\alejo\CLionProjects\Taller-PROGRA3\ui.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Taller_PROGRA3.dir/ui.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/ui.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\ui.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\ui.c.obj -c C:\Users\angel\CLionProjects\Taller\ui.c
 
 CMakeFiles/Taller_PROGRA3.dir/ui.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/ui.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\alejo\CLionProjects\Taller-PROGRA3\ui.c > CMakeFiles\Taller_PROGRA3.dir\ui.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\ui.c > CMakeFiles\Taller_PROGRA3.dir\ui.c.i
 
 CMakeFiles/Taller_PROGRA3.dir/ui.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/ui.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\alejo\CLionProjects\Taller-PROGRA3\ui.c -o CMakeFiles\Taller_PROGRA3.dir\ui.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\ui.c -o CMakeFiles\Taller_PROGRA3.dir\ui.c.s
 
 CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
-CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj: C:/Users/alejo/CLionProjects/Taller-PROGRA3/Punto1_5.c
+CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj: C:/Users/angel/CLionProjects/Taller/Punto1_5.c
 CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.obj -c C:\Users\alejo\CLionProjects\Taller-PROGRA3\Punto1_5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.obj -c C:\Users\angel\CLionProjects\Taller\Punto1_5.c
 
 CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\alejo\CLionProjects\Taller-PROGRA3\Punto1_5.c > CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\Punto1_5.c > CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.i
 
 CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\alejo\CLionProjects\Taller-PROGRA3\Punto1_5.c -o CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\Punto1_5.c -o CMakeFiles\Taller_PROGRA3.dir\Punto1_5.c.s
 
 CMakeFiles/Taller_PROGRA3.dir/function.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
-CMakeFiles/Taller_PROGRA3.dir/function.c.obj: C:/Users/alejo/CLionProjects/Taller-PROGRA3/function.c
+CMakeFiles/Taller_PROGRA3.dir/function.c.obj: C:/Users/angel/CLionProjects/Taller/function.c
 CMakeFiles/Taller_PROGRA3.dir/function.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Taller_PROGRA3.dir/function.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/function.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\function.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\function.c.obj -c C:\Users\alejo\CLionProjects\Taller-PROGRA3\function.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Taller_PROGRA3.dir/function.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/function.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\function.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\function.c.obj -c C:\Users\angel\CLionProjects\Taller\function.c
 
 CMakeFiles/Taller_PROGRA3.dir/function.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/function.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\alejo\CLionProjects\Taller-PROGRA3\function.c > CMakeFiles\Taller_PROGRA3.dir\function.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\function.c > CMakeFiles\Taller_PROGRA3.dir\function.c.i
 
 CMakeFiles/Taller_PROGRA3.dir/function.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/function.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\alejo\CLionProjects\Taller-PROGRA3\function.c -o CMakeFiles\Taller_PROGRA3.dir\function.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\function.c -o CMakeFiles\Taller_PROGRA3.dir\function.c.s
+
+CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj: CMakeFiles/Taller_PROGRA3.dir/flags.make
+CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj: C:/Users/angel/CLionProjects/Taller/ChangeString.c
+CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj: CMakeFiles/Taller_PROGRA3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj -MF CMakeFiles\Taller_PROGRA3.dir\ChangeString.c.obj.d -o CMakeFiles\Taller_PROGRA3.dir\ChangeString.c.obj -c C:\Users\angel\CLionProjects\Taller\ChangeString.c
+
+CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\angel\CLionProjects\Taller\ChangeString.c > CMakeFiles\Taller_PROGRA3.dir\ChangeString.c.i
+
+CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\angel\CLionProjects\Taller\ChangeString.c -o CMakeFiles\Taller_PROGRA3.dir\ChangeString.c.s
 
 # Object files for target Taller_PROGRA3
 Taller_PROGRA3_OBJECTS = \
@@ -144,7 +158,8 @@ Taller_PROGRA3_OBJECTS = \
 "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj" \
 "CMakeFiles/Taller_PROGRA3.dir/ui.c.obj" \
 "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj" \
-"CMakeFiles/Taller_PROGRA3.dir/function.c.obj"
+"CMakeFiles/Taller_PROGRA3.dir/function.c.obj" \
+"CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj"
 
 # External object files for target Taller_PROGRA3
 Taller_PROGRA3_EXTERNAL_OBJECTS =
@@ -154,11 +169,12 @@ Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/logica.c.obj
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/ui.c.obj
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/function.c.obj
+Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/build.make
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/linkLibs.rsp
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/objects1.rsp
 Taller_PROGRA3.exe: CMakeFiles/Taller_PROGRA3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Taller_PROGRA3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Taller_PROGRA3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Taller_PROGRA3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +186,6 @@ CMakeFiles/Taller_PROGRA3.dir/clean:
 .PHONY : CMakeFiles/Taller_PROGRA3.dir/clean
 
 CMakeFiles/Taller_PROGRA3.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\alejo\CLionProjects\Taller-PROGRA3 C:\Users\alejo\CLionProjects\Taller-PROGRA3 C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug C:\Users\alejo\CLionProjects\Taller-PROGRA3\cmake-build-debug\CMakeFiles\Taller_PROGRA3.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\angel\CLionProjects\Taller C:\Users\angel\CLionProjects\Taller C:\Users\angel\CLionProjects\Taller\cmake-build-debug C:\Users\angel\CLionProjects\Taller\cmake-build-debug C:\Users\angel\CLionProjects\Taller\cmake-build-debug\CMakeFiles\Taller_PROGRA3.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Taller_PROGRA3.dir/depend
 

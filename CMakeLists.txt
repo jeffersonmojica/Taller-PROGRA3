@@ -8,4 +8,9 @@ add_executable(Taller_PROGRA3 main.c
         logica.h
         ui.c
         ui.h
+        Punto1_5.c
+        Punto1_5.h
+        Punto1_5.h
+        Punto1_5.h
+        Punto1_5.h
 )

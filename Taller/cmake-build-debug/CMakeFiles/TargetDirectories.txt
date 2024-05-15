@@ -1,0 +1,3 @@
+C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/cmake-build-debug/CMakeFiles/Taller.dir
+C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/cmake-build-debug/CMakeFiles/rebuild_cache.dir

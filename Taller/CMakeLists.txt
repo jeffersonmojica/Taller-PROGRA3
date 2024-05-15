@@ -3,4 +3,6 @@ project(Taller C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Taller main.c)
+add_executable(Taller main.c
+        Programa.c
+        Programa.h)

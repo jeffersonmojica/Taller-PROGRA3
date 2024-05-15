@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Taller.dir/Programa.c.obj"
+  "CMakeFiles/Taller.dir/Programa.c.obj.d"
   "CMakeFiles/Taller.dir/main.c.obj"
   "CMakeFiles/Taller.dir/main.c.obj.d"
   "Taller.exe"

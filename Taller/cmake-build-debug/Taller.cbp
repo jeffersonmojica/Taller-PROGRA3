@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/Programa.c">
+			<Option target="Taller"/>
+		</Unit>
+		<Unit filename="C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/Programa.h">
+			<Option target="Taller"/>
+		</Unit>
 		<Unit filename="C:/Users/JeffersonMT/Documents/UPTC/SEMESTRE_8/PRIMER CORTE/PROGRA 3/TallerColaborativo/Taller-PROGRA3/Taller/main.c">
 			<Option target="Taller"/>
 		</Unit>

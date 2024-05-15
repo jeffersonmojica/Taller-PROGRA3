@@ -23,4 +23,5 @@ CMakeFiles/Taller.dir/main.c.obj: \
  E:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  E:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/string.h \
  E:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
- E:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h
+ E:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+ C:\Users\JeffersonMT\Documents\UPTC\SEMESTRE_8\PRIMER\ CORTE\PROGRA\ 3\TallerColaborativo\Taller-PROGRA3\Taller\Programa.h

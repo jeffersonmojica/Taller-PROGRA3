@@ -128,6 +128,30 @@ Taller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller.dir\build.make CMakeFiles/Taller.dir/build
 .PHONY : Taller/fast
 
+Programa.obj: Programa.c.obj
+.PHONY : Programa.obj
+
+# target to build an object file
+Programa.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller.dir\build.make CMakeFiles/Taller.dir/Programa.c.obj
+.PHONY : Programa.c.obj
+
+Programa.i: Programa.c.i
+.PHONY : Programa.i
+
+# target to preprocess a source file
+Programa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller.dir\build.make CMakeFiles/Taller.dir/Programa.c.i
+.PHONY : Programa.c.i
+
+Programa.s: Programa.c.s
+.PHONY : Programa.s
+
+# target to generate assembly for a file
+Programa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller.dir\build.make CMakeFiles/Taller.dir/Programa.c.s
+.PHONY : Programa.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller
+	@echo ... Programa.obj
+	@echo ... Programa.i
+	@echo ... Programa.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

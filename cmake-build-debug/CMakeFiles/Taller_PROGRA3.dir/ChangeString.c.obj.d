@@ -1,6 +1,6 @@
 CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj: \
- C:\Users\alejo\CLionProjects\Taller-PROGRA33\ChangeString.c \
- C:\Users\alejo\CLionProjects\Taller-PROGRA33\ChangeString.h \
+ C:\Users\angel\CLionProjects\Taller-PRO\ChangeString.c \
+ C:\Users\angel\CLionProjects\Taller-PRO\ChangeString.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

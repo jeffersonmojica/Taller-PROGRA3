@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/ChangeString.c" "CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj.d"
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/Punto1_5.c" "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj.d"
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/function.c" "CMakeFiles/Taller_PROGRA3.dir/function.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/function.c.obj.d"
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/logica.c" "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj.d"
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/main.c" "CMakeFiles/Taller_PROGRA3.dir/main.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/main.c.obj.d"
-  "C:/Users/alejo/CLionProjects/Taller-PROGRA33/ui.c" "CMakeFiles/Taller_PROGRA3.dir/ui.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/ui.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/ChangeString.c" "CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/ChangeString.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/Punto1_5.c" "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/Punto1_5.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/function.c" "CMakeFiles/Taller_PROGRA3.dir/function.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/function.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/logica.c" "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/logica.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/main.c" "CMakeFiles/Taller_PROGRA3.dir/main.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/main.c.obj.d"
+  "C:/Users/angel/CLionProjects/Taller-PRO/ui.c" "CMakeFiles/Taller_PROGRA3.dir/ui.c.obj" "gcc" "CMakeFiles/Taller_PROGRA3.dir/ui.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

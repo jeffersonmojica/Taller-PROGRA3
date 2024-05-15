@@ -18,6 +18,8 @@ int main() {
         printf("1. Buscar todas las ocurrencias de una subcadena\n");
         printf("4.Función que reemplaza todas las ocurrencias de un carácter por otro \n");
         printf("5. Validar si una cadena inicia con otra\n");
+        printf("8.Función que inserta una cadena dentro de otra a partir de una posición válida \n");
+
 
         printf("0. Salir\n");
         printf("Seleccione una opción: ");
@@ -62,6 +64,32 @@ int main() {
                 inicio = stringStartWith(cadena, subcadena);
                 printf("%d\n", inicio);
                 break;
+            case 8:
+                 char Chainbase[100];
+    char subText[100];
+    int posicionInsercion;
+
+    printf("Ingrese la cadena base: ");
+    scanf("%s", Chainbase);
+
+
+    printf("Ingrese la subcadena a insertar: ");
+    scanf("%s", subText);
+
+    subText[strcspn(subText, "\n")]='\0';
+    printf("Ingrese la posición de inserción: ");
+    scanf("%d", &posicionInsercion);
+
+
+    if (strlen(subText) == 0) {
+        printf("Error: La subcadena no puede estar vacía.\n");
+        return 1;
+    }
+
+    InsertSubstring(Chainbase, subText, posicionInsercion);
+
+    printf("La nueva cadena es: %s\n", Chainbase);
+
             case 0:
                 printf("Saliendo del programa...\n");
                 break;
